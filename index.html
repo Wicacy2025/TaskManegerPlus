@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto8n</title>
+</head>
+<style>
+    header {
+        background-color: rgb(52, 53, 54);
+        padding: 15px;
+        border-radius: 8px;
+    }
+    span{
+        font-size: 28px;
+        font-family: arial;
+        color: orange;
+    }
+    b{
+        color: aliceblue;
+        font-weight: lighter;
+    }
+    section{
+        margin: 50px;
+    }  
+    input {
+        display: block;
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: aliceblue;
+        border-style: groove;
+        border-color: aliceblue;
+        outline: none;
+    }
+    button{
+        display: block;
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: black;
+        color: aliceblue;
+    }
+    select {
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        border-color: aliceblue;
+        outline: none;
+    }
+</style>
+<body>
+    <header class="menu">
+        <span>Task<b>Up</b></span>
+    </header>
+    <section class="task">
+        <input type="text" id="title" placeholder="Task title">
+        <select id="status">
+            <option value="selecione">Status task</option>
+            <option value="naoconcluida">Não concluída</option>
+            <option value="emprocesso">Em processo</option>
+            <option value="concluida">Concluída</option>
+        </select>
+        <button onclick="criarTarefa()">Criar Tarefa</button>
+    </section>
+    <br>
+    <div>
+        <ul id="tarefascriadas"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
